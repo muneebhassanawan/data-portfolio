@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+.envrc
+
+# Conda environment export
+environment.yml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit cache
+.cache/
+
+# VS Code settings (optional)
+.vscode/
