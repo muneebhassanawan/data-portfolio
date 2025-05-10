@@ -41,7 +41,7 @@ def run():
     st.title("🎓 College Placement Predictor")
     st.markdown("Predict your placement chances based on **CGPA** and **IQ**.")
     # Load dataset
-    plc_df = pd.read_csv("datasets/placement-dataset.csv")
+    plc_df = pd.read_csv("streamlit/datasets/placement-dataset.csv")
 
     # Fix: Use correct features
     X = plc_df[['cgpa', 'iq']]
@@ -84,7 +84,7 @@ def run():
     st.markdown("Predict the best crop to grow based on **N**, **P**, **K**, **temperature**, **humidity**, **ph** and **rainfall**.")
 
     # Load dataset
-    crop_df = pd.read_csv("datasets/crop_recommendation.csv")
+    crop_df = pd.read_csv("streamlit/datasets/crop_recommendation.csv")
     
     # Round off decimal columns
     decimal_cols = ['temperature', 'humidity', 'ph', 'rainfall']
